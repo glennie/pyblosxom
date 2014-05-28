@@ -1,0 +1,16 @@
+<!-- vim: syntax=html ai si: 
+-->
+<!-- template: comment-preview -->
+<div class="story">
+  <div class="storyTitlePanel">
+    <h1 style="font-weight: normal;">Comment by $cmt_optionally_linked_author at $cmt_pubDate</h1>
+  </div>
+    <div class="storyBody">
+      $cmt_description
+    </div>
+  <div class="storyTitlePanel">
+    <h1 style="font-weight: bold; background-color: #F0F3F8; color: red; text-align: center">Preview only.</h1>
+  </div>
+</div>
+
+<!-- template: comment-preview -->

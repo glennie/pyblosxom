@@ -1,0 +1,142 @@
+<!-- vim: syntax=html:
+-->
+<!-- template: foot --> 
+</div> <!-- div id=post -->
+  <div class="page_navigation">
+    $(page_navigation)
+  </div>
+</div> <!-- div id=content -->
+
+  <!--{{{ menu -->
+  <div id=menu> <!-- start DIV menu -->
+    <div id="floatingmenuPanel"> <!-- start DIV floatingmenuPanel -->
+
+      <!-- {{{Links -->
+      <div class="menuPanel">
+        <h1>Links</h1>
+        <ul>
+          <li class="wikilink">
+            <a href="http://www.glennie.fr/glennie">Contact</a>
+          </li>
+        
+          <li class="wikilink">
+            <a href="http://www.glennie.fr">www.glennie.fr</a>
+          </li>
+          <li class="wikilink">
+            <a href="https://www.glennie.fr/Disclaimer">Disclaimer</a>
+          </li>
+          <li class="wikilink">
+            <a href="/index.atom">Flux RSS</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Links End }}} -->
+
+      <!--{{{ Search -->
+      <div class="menuPanel">
+        <h1>Search</h1>
+        <form id="searchform" method="get" action="http://google.com/search">
+          <div>
+            <input type="hidden" name="sitesearch" value="blog.glennie.fr" />
+            <input id="searchinput" type="text" name="q" value="" 
+              alt="Rechercher?" />
+            <div id="searchbuttons">
+              <input id="titlesearch" name="" type="submit" value="Google" alt="Recherche sur ce blog en utilisant google" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Search }}}-->
+
+      <!--{{{ Calendar -->
+      <div class="menuPanel">
+        <h1> Archives </h1>
+        $calendar
+      </div>
+      <!-- Calendar }}}-->
+
+      <!--{{{ tags -->
+      <div class="menuPanel">
+        <h1> Tags </h1>
+          $(tagslist)
+      </div>
+      <!-- tags }}}-->
+
+    </div> <!-- end DIV floatingmenuPanel -->
+
+   </div> <!-- end DIV menu -->
+
+    <!-- menu }}}-->
+
+<!--{{{Footer-->
+<div id="footer"> <!-- div: id=footer -->
+  <div class="credits">
+    <hr>
+    <ul class="credits">
+      <li>
+        Powered by <a href="http://pyblosxom.github.io" title="This blog uses Pyblosxom blog engine">Pyblosxom</a> 
+        with some <a href="/plugin_info" title="active pyblosxom plugins">plugins</a>, 
+        <a href="http://www.glennie.fr/dynamicdata/miscs/moniker.tgz" title="download the customized moniker theme">customized</a> 
+        <a href="http://moinmo.in/ThemeMarket/Moniker/" title="This blog uses the Moniker theme">moniker</a> theme and 
+        <a href="http://moinmo.in/" title="and the moinmoin wiki">moinmoin</a> <a href="http://www.glennie.fr/dynamicdata/miscs/moinmoin.py" title="entry parser">entry parser</a>.
+      </li>
+      <li>
+        <br />
+        This blog content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+      </li>
+    </ul>
+    <!--end credits}}}-->
+  </div>
+</div>  <!-- div: id=footer -->
+<!--}}}-->
+
+<!--{{{ javascripts -->
+
+<!--{{{ uitop  -->
+<script src="$mediaurl/moniker/plugins/toTop/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="$mediaurl/moniker/plugins/toTop/js/jquery.ui.totop.js" type="text/javascript"></script>
+<script src="$mediaurl/moniker/plugins/toTop/js/easing.js" type="text/javascript"></script>
+<!--}}} -->
+
+
+<!--{{{ uitop inline code  -->
+<script type="text/javascript">
+    \$(document).ready(function() {
+      var defaults = {
+        min: 1,
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 600,
+        easingType: 'linear' 
+      };
+      
+      $().UItoTop({ easingType: 'easeInOutQuint' });
+      
+    });
+  </script>
+<!--}}}-->
+
+<!--{{{piwik trakcing-->
+            <script type="text/javascript">
+            var pkBaseURL = (("https:" == document.location.protocol) ? "https://analytics.glennie.fr/" : "http://analytics.glennie.fr/");
+            document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            <script type="text/javascript">
+              try {
+                var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+                piwikTracker.trackPageView();
+                piwikTracker.enableLinkTracking();
+              } catch( err ) {}
+            </script><noscript><p><img src="http://analytics.glennie.fr/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+          <!-- End Piwik Tracking Code -->
+
+          <script type='text/javascript' src='http://www.glennie.fr/dynamicdata/js/awstats_misc_tracker.js'></script>
+
+           <noscript><img src="http://www.glennie.fr/dynamicdata/js/awstats_misc_tracker.js?nojs=y" height=0 width=0 border=0 style="display: none"></noscript>
+
+<!--}}}-->
+
+<!--}}} -->
+</body>
+</html>
+<!-- template: foot --> 

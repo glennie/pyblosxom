@@ -1,0 +1,47 @@
+
+html {
+	background-color: white;
+	color: black;
+	font-family: Arial, Lucida Grande, sans-serif;
+	font-size: 0.85em;
+	line-height: 1.25em;
+}
+
+html, body { margin: 4px; padding: 0; background-color: #e5e5e5; color: black; }
+
+body {
+	vertical-align: text-top;
+	line-height: 1.4;
+	font: normal 1em Verdana, Arial, Helvetica, sans-serif; 
+}
+
+p, ol, ul, li, table {font-size: 1.0em;}
+p, h1, h2, h3, h4, h5, h6 {margin: 1.2em 0 0 0;}
+input, select, th, tr, td {font-size: 1.0em;}
+pre, tt {font-family: monospace, courier; font-size: 1.1em; color: #8b0000;}
+strong, b {font-weight: bold;}
+small {font-size: 0.8em;}
+img {border: 0;}
+
+table {margin: 0; padding: 0; width: 99%;}
+th {text-align: left; font-weight: bold;}
+tr {text-align: left;}
+th, tr, td {vertical-align: top;}
+
+/* increase monospace fonts on Mozilla using invalid pseudo-class hack */
+:root code {font-size: 120%;}
+
+
+
+/* -------- */
+/* headings */
+/* -------- */
+
+h1 { font-size: 1.7em; margin-top: 10; text-shadow: #AAAAAA 2px 1px 3px; }
+h2 { font-size: 1.4em; padding-top: 25px; border-bottom: 2px solid #4A6AB0; text-shadow: #AAAAAA 2px 1px 3px; }	
+h3 { font-size: 1.2em; padding-left: 0.3em; border-left: 10px solid #4A6AB0; text-shadow: #AAAAAA 2px 1px 3px; }	
+h4 { font-size: 1.0em; padding-left: 0.3em; border-left: 4px solid #4A6AB0; }	
+h5, h6 { font-size: 1.0em; font-weight: bold; }
+h6 { margin-bottom: -1.0em; }
+
+

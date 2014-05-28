@@ -1,0 +1,18 @@
+<!-- vim: syntax=html ai si:
+-->
+<!-- template: story -->
+  <div class="story"> <!-- div: story -->
+    <div class="storyTitlePanel">
+    <h1>
+        <a href="/$(file_path_urlencoded).$(flavour)">$(title)</a>
+    </h1>
+    </div>
+    <div class="storyBody"> <!-- div: class=storyBody -->
+      $(body)
+    </div> <!-- div: class=storyBody -->
+    <hr />
+    <div class="storyInfo" > <!-- div: class=storyInfo -->
+            Tags: $(tags) | Posted on $(da)/$(mo_num)/$(yr) at $(ti) by <a href="http://www.glennie.fr/">$(blog_author)</a> | <a href="/$(file_path_urlencoded).$(flavour)">Permalink</a> | <a href="/$(file_path_urlencoded).$(flavour)#comment-anchor">Comments: $(num_comments)</a>
+        </div> <!-- div: class=storyInfo -->
+  </div> <!-- div: story -->
+<!-- template: story -->

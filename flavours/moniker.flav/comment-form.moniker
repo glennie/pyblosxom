@@ -1,0 +1,67 @@
+<!-- vim: syntax=html:
+-->
+<!-- Template: comment-form -->
+
+<!--Javascripts{{{ -->
+<script type="text/javascript" src="/themes/js/comments.js" />
+<script type="text/javascript" src="/comments.js" />
+<script type="text/javascript">
+function show_comment_form() {
+  document.getElementById('comment-input').style.display = 'inline';
+  document.getElementById('post-comment-link').style.display = 'none';
+}
+</script>
+<!--}}} -->
+
+  <!-- {{{Comment form and buttons -->
+
+    <!--{{{comment form -->
+      <form name="comments_form" id="comments_form" method="post" action="$base_url/$file_path" onsubmit="return false;">
+        <fieldset id="comments-field">
+          <legend id="comments-field-legend">
+            Post your comment
+          </legend>
+
+      <!--{{{input fields -->
+        <input name="parent" id="comment-parent" type="hidden" value="$file_path" />
+        <input name="title" id="comment-title" type="hidden" value="$title" />
+        <p>
+          <input name="author" id="comment-author" class="comment-text" type="text" value="$cmt_author" />
+          <label for="comment-author" class="comment-label" style="font-weight: bold;">Name (required)</label>
+        </p>
+        <p>
+          <input name="email" id="comment-email" class="comment-text" type="text" value="$cmt_email" />
+          <label for="comment-email" class="comment-label">eMail (optional)</label>
+        </p>
+        <p>
+          <input name="url" id="comment-url" class="comment-text" type="text" value="$cmt_link" />
+          <label for="comment-url" class="comment-label">Web site (optional)</label>
+        </p>
+        <!--}}}-->
+
+    <!--{{{texte area-->
+          <textarea name="body" id="comment-text" placeholder="Thanks for you comment!" rows="10" >$cmt_description</textarea>
+         Simple HTML markup is allowed.
+    <!--}}}-->
+
+    <!--{{{post and preview buttons -->
+      <div id="comment-buttons"> <!-- Start DIV comment-buttons -->
+          <input class="comment-button" value="Post" name="post" type="submit" onclick="javascript:send_comment('post');" />
+          <input class="comment-button" value="Preview" name="preview" type="submit" onclick="javascript:send_comment('preview');" />
+      </div> <!-- End DIV comment-buttons -->
+
+    <!--{{{ Debut div comment-anchor-->
+      <div id="comment-anchor">
+        <div class="message">
+          $cmt_message
+        </div>
+      </div>
+    <!--}}} Fin div comment-anchor-->
+    <!--}}}-->
+        </fieldset>
+      </form>
+    <!--}}}-->
+
+  <!--}}}-->
+
+<!-- Template: comment-form -->

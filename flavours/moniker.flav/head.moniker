@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- template: head -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$blog_language" xml:lang="$blog_language">
+
+<!-- head{{{ -->
+<head>
+
+<!--{{{meta html tags -->
+  <meta name="author" content="$(blog_author) ($blog_email)" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="$(blog_description)" />
+  <meta name="generator" content="pyblosxom" />
+  <!-- > <meta name="viewport" content="initial-scale=1.0;maximum-scale=1.0; minimum-scale=1.0; user-scalable=0; width=device-width">
+  <meta name="mobileoptimized" content="300">
+  -->
+  <link rel="author" href="http://www.glennie.fr" />
+<!-- #}}} -->
+
+<!--{{{CSS-->
+  <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="$mediaurl/moniker/css/pyblosxom.css" />
+<!--}}}-->
+
+<!--{{{ RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS : Les posts" href="/?flav=rss20" />
+  <link rel="alternate" type="application/rss+xml" title="RSS : Les posts" href="/index.atom" />
+<!--}}} -->
+
+  <title>$blog_title</title>
+</head>
+
+<!-- HTML Header }}}-->
+
+<!-- Body -->
+<body lang="$blog_language">
+
+<!--{{{header -->
+<div id="header"> <!-- div: id=header -->
+  <div class="headerpanel">
+    <h1><a href="http://blog.glennie.fr/">$blog_title</a></h1>
+    <ul>
+      <li>
+       $blog_description
+      </li>
+    </ul>
+   </div>
+</div>  <!-- div: header -->
+<!-- header }}}-->
+
+  <div id="posts"> <!-- div: id=posts-->
+    <div id="content"> <!-- div: id=content-->
+      <div class="page_navigation">
+        $(page_navigation)
+      </div>
+<!-- template: head -->

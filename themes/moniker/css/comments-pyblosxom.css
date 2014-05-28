@@ -1,0 +1,74 @@
+/* COMMENTS */
+form#comments_form { margin: 0px; padding: 0px; }
+
+textarea#comment-text{
+  width: 99%;
+  margin-top: 2%;
+  overflow: auto;
+  color: black;
+  resize: none;
+}
+
+div#comment-buttons{
+  margin-top: 2px ; 
+  margin-bottom: 10px ; 
+  margin-left: 5px; 
+}
+
+input.comment-button{
+	font-size: 1.2em;
+  font-style: normal ;
+}
+
+label.comment-label {
+  width: 4em;
+  font-weight: normal ;
+}
+
+fieldset#comments-field {
+	padding-left: 1%;
+	padding-right: 2%; 
+	padding-top: 1%;
+	padding-bottom: 1%; 
+	margin-top: 0%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+	margin-left: 0%;
+  border-color: #cccccc;
+  background-color: #F0F3F8;
+/*  border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; 
+  box-shadow: 2px 1px 3px #CCCCCC; -moz-box-shadow: 2px 1px 3px #CCCCCC; -webkit-box-shadow: 2px 1px 3px #CCCCCC; */
+
+}
+
+legend#comments-field-legend {
+  padding-left: 0.5%;
+	padding-right: 1%; 
+	padding-top: 0%;
+	padding-bottom: 0%; 
+
+	margin-top: 0%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+	margin-left: 0%;
+
+  font-size: 2em ;
+  clear: both ;
+  color: white;
+  font-weight: normal ;
+  background-color: #4A6AB0;
+  border-color: #cccccc;
+  border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; 
+  box-shadow: 2px 1px 3px #CCCCCC; -moz-box-shadow: 2px 1px 3px #CCCCCC; -webkit-box-shadow: 2px 1px 3px #CCCCCC;
+}
+
+.ajax-error {
+  font-size: 1.5em ;
+  font-weight: bold ;
+  color: red;
+}
+.blosxomCommentApproval {
+  font-size: 1.5em ;
+  font-weight: bold ;
+  color: green;
+}

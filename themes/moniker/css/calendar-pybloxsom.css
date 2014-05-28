@@ -1,0 +1,68 @@
+/* MonthCalendar css */
+
+td.blosxomCalendarToday {
+    background-color: #CCFFCC;
+    border-style: none;
+    border-width: 0pt;
+    text-align: center;
+}
+
+table.blosxomCalendar {
+    color: black;
+    border-width: 0px;
+    border-collapse:collapse;
+    width:100%;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+td.blosxomCalendarNavCellLeft, td.blosxomCalendarNavCellRight {
+  font-weight: bold;
+  text-align: center;
+  border-style: none;
+  font-size: 0.90em;
+}
+
+td.blosxomCalendarHead, tr.blosxomCalendarHead{
+  font-weight: bolder;
+  text-align: center;
+  border-style: none;
+  font-variant: small-caps ;
+  font-size: 1em;
+}
+
+
+
+tr.blosxomCalendar, tr.blosxomCalendarWeekHeader, tr.blosxomCalendarCell, tr.blosxomCalendarBlogged, tr.blosxomCalendarEmpty {
+    font-weight: normal;
+    text-align: center;
+    border-style: none;
+}
+td.blosxomCalendar, td.blosxomCalendarWeekHeader, td.blosxomCalendarCell, td.blosxomCalendarBlogged, td.blosxomCalendarEmpty {
+    text-align: center;
+    border-style: none;
+}
+
+tr.blosxomCalendarBlogged{
+    font-weight: bold;
+    text-align: center;
+    background-color: #4A61B0;
+    color: white;
+    border-style: none;
+}
+td.blosxomCalendarBlogged{
+    text-align: center;
+    background-color: #4A61B0;
+    color: white;
+    border-style: none;
+}
+
+td.blosxomCalendarBlogged a {
+    font-weight: bold;
+    color: white;
+}
+
+tr.blosxomCalendarBlogged a {
+    color: white;
+    font-weight: bold;
+}

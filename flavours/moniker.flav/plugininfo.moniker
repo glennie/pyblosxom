@@ -1,0 +1,16 @@
+<!-- vim: syntax=html ai si:
+-->
+<!-- template: story -->
+  <div class="story"> <!-- div: story -->
+    <div class="storyTitlePanel">
+    <h1>
+        <a href="/$(file_path_urlencoded).$(flavour)">$(title)</a>
+    </h1>
+    </div>
+    <div class="storyBody"> <!-- div: class=storyBody -->
+      <div class="tip"> <!-- div: class=tip -->
+        $(body)
+      </div> <!-- div: class=tip -->
+    </div> <!-- div: class=storyBody -->
+  </div> <!-- div: story -->
+<!-- template: story -->
